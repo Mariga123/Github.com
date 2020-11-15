@@ -12,6 +12,7 @@ export class User {
     public following: any,
     // tslint:disable-next-line: variable-name
     public repos_url: any,
-    public created: Date,
+    // tslint:disable-next-line: variable-name
+    public created_at: Date,
     ){}
 }
