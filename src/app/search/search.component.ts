@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-search',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
+  searchName: string;
+  @Output() search = new EventEmitter<any>();
   constructor() { }
+// tslint:disable-next-line: typedef
+  searchUserName(){
+    this.search.emit(this.searchName);
+  }
 
-  ngOnInit(): void {
+  // tslint:disable-next-line: typedef
+  ngOnInit(){
   }
 
 }
