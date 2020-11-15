@@ -7,12 +7,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RepositoryComponent } from './repository/repository.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SearchComponent
+    SearchComponent,
+    RepositoryComponent
   ],
   imports: [
     BrowserModule,
