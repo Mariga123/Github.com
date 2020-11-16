@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RepositoryComponent } from './repository/repository.component';
 import { DateCountPipe } from './date-count.pipe';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DateCountPipe } from './date-count.pipe';
     NavbarComponent,
     SearchComponent,
     RepositoryComponent,
-    DateCountPipe
+    DateCountPipe,
+    FormComponent
   ],
   imports: [
     BrowserModule,
