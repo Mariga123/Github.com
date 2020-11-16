@@ -1,10 +1,10 @@
 <div class="card-body">
     <form class="form-inline">
         <div class="form-group" >
-            <input name="searchName" [(ngModel)]="searchName" size="60" type="search" class="form-control" placeholder="GitHub User">
+            <input name="searchName" [(ngModel)]="searchName" size="60" type="text" class="form-control" placeholder="GitHub User">
         </div>
         <div>
-          <input (click) = "searchUserName()" type="submit" value="Search" class="btn btn-secondary btn-sm">
+          <input (addSearch)="searchName($event)" type="submit" value="Search" class="btn btn-secondary btn-sm">
         </div>
     </form>
 </div>

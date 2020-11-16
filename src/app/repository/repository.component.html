@@ -11,7 +11,7 @@
               </div><br>
             
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mt-4">
                     <button class="btn btn-primary"> Following: {{user.following}}</button><br><br>
                 
                    <button class="btn btn-warning"> followers: {{user.followers}}</button>
@@ -24,9 +24,8 @@
             <div class="card">
                 <div class="card-body">
                   <h5 class="card-title font-weight-bold">{{repos.name}}</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Created at:{{user.created_at | datePipe}} </h6>
+                  <h6 class="card-subtitle mb-2 text-muted">Created at:{{repos.created_at | datePipe}} </h6>
                   <p class="card-text">{{repos.description}}</p>
-                  
                   <a href="{{user.html_url}}" class="card-link">View More on GitHub</a>
                 </div>
               </div>
